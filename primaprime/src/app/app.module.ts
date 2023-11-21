@@ -27,6 +27,8 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { PresentComponent } from './pages/present/present.component';
 import { FeaturesComponent } from './pages/features/features.component';
+import { OverviewComponent } from './pages/overview/overview.component';
+import { GetappComponent } from './pages/getapp/getapp.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { FeaturesComponent } from './pages/features/features.component';
     HeaderComponent,
     FooterComponent,
     PresentComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    OverviewComponent,
+    GetappComponent
   ],
   imports: [
     BrowserModule,
