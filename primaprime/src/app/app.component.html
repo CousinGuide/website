@@ -1,9 +1,12 @@
-<!-- 
-<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.506/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/gPWofAvlpcLtWOn7/scene.splinecode"></spline-viewer>
- -->
-
-<!-- app.component.html -->
 <app-header></app-header>
-<canvas id="canvas3d" #canvas3d></canvas>
+<div class="canvas-container">
+    <canvas id="canvas3d1" #canvas3d1></canvas>
+    <app-present class="overlay-component1"></app-present>
+</div>
+<app-about></app-about>
+<div class="canvas-container">
+    <canvas id="canvas3d2" #canvas3d2></canvas>
+    <app-features class="overlay-component2"></app-features>
+    <app-contact></app-contact>
+</div>
 <app-footer></app-footer>

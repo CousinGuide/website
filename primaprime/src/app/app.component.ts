@@ -9,15 +9,24 @@ import { Application } from '@splinetool/runtime';
 export class AppComponent implements OnInit {
   title = 'primaprime';
 
-  @ViewChild('canvas3d', { static: true })
-  canvas3d!: ElementRef;
-  spline!: Application;
+  @ViewChild('canvas3d1', { static: true })
+  canvas3d1!: ElementRef;
+  spline1!: Application;
+
+  @ViewChild('canvas3d2', { static: true })
+  canvas3d2!: ElementRef;
+  spline2!: Application;
 
   ngOnInit(): void {
-    if (this.canvas3d && this.canvas3d.nativeElement) {
-      this.spline = new Application(this.canvas3d.nativeElement);
-      this.spline.load('https://prod.spline.design/oaIEWq6IabiJg6oQ/scene.splinecode');
+    this.initCanvas(this.canvas3d1, 'https://prod.spline.design/oaIEWq6IabiJg6oQ/scene.splinecode');
+    this.initCanvas(this.canvas3d2, 'https://prod.spline.design/oaIEWq6IabiJg6oQ/scene.splinecode');
+  }
+
+  initCanvas(canvasElement: ElementRef, sceneUrl: string) {
+    if (canvasElement && canvasElement.nativeElement) {
+      const splineApp = new Application(canvasElement.nativeElement);
+      splineApp.load(sceneUrl);
+      // You can store splineApp in an array or manage it as needed
     }
   }
 }
-

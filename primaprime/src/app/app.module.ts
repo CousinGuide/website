@@ -25,6 +25,8 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { PresentComponent } from './pages/present/present.component';
+import { FeaturesComponent } from './pages/features/features.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
     SurveyComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PresentComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,
