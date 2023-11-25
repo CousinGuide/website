@@ -8,6 +8,10 @@ import { SurveyComponent } from './pages/survey/survey.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { PresentComponent } from './pages/present/present.component';
+import { FeaturesComponent } from './pages/features/features.component';
+import { OverviewComponent } from './pages/overview/overview.component';
+import { GetappComponent } from './pages/getapp/getapp.component';
 
 //MDBoostrap
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
@@ -25,10 +29,7 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
-import { PresentComponent } from './pages/present/present.component';
-import { FeaturesComponent } from './pages/features/features.component';
-import { OverviewComponent } from './pages/overview/overview.component';
-import { GetappComponent } from './pages/getapp/getapp.component';
+
 
 @NgModule({
   declarations: [

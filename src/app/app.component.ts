@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.initCanvas(this.canvas3d1, 'https://prod.spline.design/oaIEWq6IabiJg6oQ/scene.splinecode');
-    this.initCanvas(this.canvas3d2, 'https://prod.spline.design/oaIEWq6IabiJg6oQ/scene.splinecode');
+    this.initCanvas(this.canvas3d2, 'https://prod.spline.design/LrXe6UjC3nwcULKu/scene.splinecode');
   }
 
   initCanvas(canvasElement: ElementRef, sceneUrl: string) {
